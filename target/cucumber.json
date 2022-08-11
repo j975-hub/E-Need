@@ -1,0 +1,146 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 17734000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User will enter credential to Login Page",
+            "match": {
+              "location": "StepDefinations.LoginTest.user_will_enter_credential_to_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-23T03:24:20.491Z",
+        "line": 9,
+        "name": "Verify Item In Mobile List Page Can Be Sorted By \u0027Name\u0027",
+        "description": "",
+        "id": "mobile-name-in-sorting-order;verify-item-in-mobile-list-page-can-be-sorted-by--name-",
+        "after": [
+          {
+            "result": {
+              "duration": 3014000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinations.Hooks.tearDownBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4310000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Is On Landing Page",
+            "match": {
+              "location": "StepDefinations.TestCase1.user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User see the title of the Home page",
+            "match": {
+              "location": "StepDefinations.TestCase1.user_see_the_title_of_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4894000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on mobile menu",
+            "match": {
+              "location": "StepDefinations.TestCase1.user_click_on_mobile_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User see the title of the Mobile page",
+            "match": {
+              "location": "StepDefinations.TestCase1.user_see_the_title_of_the_mobile_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2131000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User sort mobile using \"Name\" dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinations.TestCase1.user_sort_mobile_using_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [                                             Position\n                                             Name\n                                             Price\n                                    ] but found [Name]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\r\n\tat org.testng.Assert.assertEquals(Assert.java:122)\r\n\tat org.testng.Assert.assertEquals(Assert.java:629)\r\n\tat org.testng.Assert.assertEquals(Assert.java:639)\r\n\tat StepDefinations.TestCase1.user_see_all_products_are_sorted_by_something(TestCase1.java:82)\r\n\tat ✽.User see all products are sorted by \"Name\"(file:///D:/UDEMY/Work/Project_2022/E-Need/src/test/java/Features/TC1.feature:15)\r\n",
+              "duration": 90000000,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "User see all products are sorted by \"Name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDefinations.TestCase1.user_see_all_products_are_sorted_by_something(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@WebTest"
+          }
+        ]
+      }
+    ],
+    "name": "Mobile Name In Sorting Order",
+    "description": "    Description:User will search mobile according to name",
+    "id": "mobile-name-in-sorting-order",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/TC1.feature",
+    "tags": []
+  }
+]

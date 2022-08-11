@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="33.232">
+<testcase classname="Mobile Name In Sorting Order" name="Verify Item In Mobile List Page Can Be Sorted By 'Name'" time="32.635">
+<failure message="expected [                                             Position&#10;                                             Name&#10;                                             Price&#10;                                    ] but found [Name]" type="java.lang.AssertionError"><![CDATA[Given User will enter credential to Login Page..............................passed
+Given User Is On Landing Page...............................................passed
+Given User see the title of the Home page...................................passed
+When User click on mobile menu..............................................passed
+Then User see the title of the Mobile page..................................passed
+And User sort mobile using "Name" dropdown..................................passed
+And User see all products are sorted by "Name"..............................failed
+
+StackTrace:
+java.lang.AssertionError: expected [                                             Position
+                                             Name
+                                             Price
+                                    ] but found [Name]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at StepDefinations.TestCase1.user_see_all_products_are_sorted_by_something(TestCase1.java:82)
+	at ✽.User see all products are sorted by "Name"(file:///D:/UDEMY/Work/Project_2022/E-Need/src/test/java/Features/TC1.feature:15)
+]]></failure>
+</testcase>
+</testsuite>
